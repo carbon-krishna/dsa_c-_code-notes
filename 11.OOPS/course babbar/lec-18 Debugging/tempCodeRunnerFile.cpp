@@ -1,0 +1,1 @@
+void display() { cout << "Child: " << value << endl; }

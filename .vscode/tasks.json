@@ -1,0 +1,30 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build & run C++",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-g",
+        "${file}",
+        "-o",
+        "out/${fileBasenameNoExtension}.exe"
+      ],
+      "group": "build",
+      "problemMatcher": ["$gcc"],
+      "detail": "Compile into out/ subfolder"
+    },
+    {
+      "label": "run & clean",
+      "type": "shell",
+      "dependsOn": "build & run C++",
+      "command": "powershell",
+      "args": [
+        "-NoProfile",
+        "-Command",
+        "\"./out/${fileBasenameNoExtension}.exe; Remove-Item out/${fileBasenameNoExtension}.exe\""
+      ]
+    }
+  ]
+}

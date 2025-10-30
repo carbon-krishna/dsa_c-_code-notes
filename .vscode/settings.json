@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "vector": "cpp",
+        "list": "cpp",
+        "queue": "cpp",
+        "xutility": "cpp",
+        "deque": "cpp",
+        "format": "cpp",
+        "xstring": "cpp"
+    },
+    "git.ignoreLimitWarning": true
+}
